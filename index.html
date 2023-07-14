@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Betting Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Betting Website</h1>
+        <div class="timer" id="timer">5</div>
+        <div class="options">
+            <button id="red" class="color-btn" onclick="confirmBet('red')" style="background-color: red; color: white;">Red</button>
+            <button id="green" class="color-btn" onclick="confirmBet('green')"style="background-color: green; color: white;">Green</button>
+            <button id="blue" class="color-btn" onclick="confirmBet('blue')"style="background-color: blue; color: white;">Blue</button>
+        </div>
+        <div id="result" class="result hidden"></div>
+    </div>
+
+    <div id="confirmation-popup" class="hidden">
+        <div class="popup-content">
+            <p>Are you sure you want to place a bet?</p>
+            <div class="button-container">
+                <button id="confirm-button" class="confirmation-button">Confirm</button>
+                <button id="cancel-button" class="confirmation-button">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
